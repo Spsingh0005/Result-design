@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+:root {
+    /* Plain colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    /* linear gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --pale-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    /* neutrals */
+    --white: hsl(0, 0%, 100%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    /* Font weights */
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-extrabold: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding-top: 3.1rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50rem;
+    margin: auto;
+    border-radius: 32px;
+    height: 32rem;
+    box-shadow: 1px 3px 26px -8px #000000b0;
+    /* background-color: red; */
+    /* padding-left: 4.7rem; */
+}
+
+.card .card-display h3 {
+    font-weight: var(--font-medium);
+    color: var(--light-lavender);
+    margin: 10px 0 20px;
+    font-size: 1.4rem;
+
+}
+
+.card .card-display {
+    text-align: center;
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 32px;
+    padding: 32px 15px 0 0;
+    background: linear-gradient(to left bottom,var(--light-slate-blue),var(--light-royal-blue));
+    
+}
+
+.card .reading h2 {
+    font-size: 4rem;
+    font-family: 'Orbit', sans-serif;
+    font-weight: var(--font-bold);
+}
+.card .reading p{
+    font-size: .7rem;
+    color: var(--light-lavender);
+
+
+}
+
+.card .reading {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 32vh;
+    width: 32vh;
+    margin: 14px 0 28px;
+    background: linear-gradient(to top,var(--cobalt-blue),var(--pale-blue));
+    border-radius: 50%;
+    padding: 20px 0;
+    line-height: 60px;
+
+}
+.card .card-display span{
+    margin: 10px 0 16px;
+  font-size: 2rem;
+}
+.card .card-display p{
+    font-size: 1.1rem;
+    width: 75%;
+    color: var(--light-lavender);
+}
+.card .card-display p span{
+    font-size: 1.1rem;
+    margin: 5px auto;
+    text-align: center;
+    width: 97%;
+    display: block;
+
+}
+.card-content{
+    padding: 35px 35px 0px 41px;
+    width: 50%;
+}
+.card-content h3{
+    margin: 10px 0 34px;
+    font-weight: var(--font-bold);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.card-content .card-content-items{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+    padding-left: 22px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+.card-content .card-content-items .fa-regular{
+    font-size: 1.5rem;
+}
+
+.card-content .card-content-items .mark-title{
+    margin-left: 0.5rem;
+}
+.card-content .card-content-items .number{
+    margin-left: 4rem;
+}
+.card-content .card-content-items .number span{
+    color: gray;
+}
+.card-content .card-content-items .number{
+    color: black;
+}
+.card-content .card-content-items .memory{
+    color: var(--orange-yellow);
+}
+.card-content .reaction{
+    color: var(--light-red);
+    background-color: rgb(240, 191, 191);
+    padding: 15px;
+}
+.card-content .memory{
+    color: var(--orange-yellow);
+    background-color: rgb(240, 240, 181);
+    padding: 15px;
+}
+.card-content .verbal{
+    color: var(--green-teal);
+    background-color: rgb(147, 255, 171);
+    padding: 15px;
+}
+.card-content .visual{
+    color: var(--cobalt-blue);
+    background-color: rgb(176, 176, 234);
+    padding: 15px;
+}
+.card-content button{
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--dark-gray-blue);
+    color: var(--light-lavender);
+    font-size: 1.2rem;
+}
